@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 52; i++)
 	{
-		if (i == "q" || i == "e")
+		if (i == 'q' || i == 'e')
 		{
 			continue;
 		}
