@@ -10,7 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int mult;
+	int mult, i, n;
 
 	if (argv[3] != NULL)
 	{
@@ -20,7 +20,9 @@ int main(int argc, char *argv[])
 
 	else
 	{
-		mult = atoi(argv[1] * argv[2]);
+		i = atoi(argv[1]);
+		n = atoi(argv[2]);
+		mult = i * n;
 		printf("%d\n", mult);
 	}
 
