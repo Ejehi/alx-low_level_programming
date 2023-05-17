@@ -2,25 +2,22 @@
 #include <stdlib.h>
 
 /**
- * main -  a program that multiplies two numbers
- *
- * @argc: argument count
- * @argv: argument vector
- *
- * Return: (0) if success and (1) otherwise
- */
+  * main - Prints the multiplication of two args numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: (0) if success and (1) otherwise
+  */
 int main(int argc, char *argv[])
 {
-	int mult, i, n;
+	int n1 = 0, n2 = 0;
 
-	if (argv[3] == NULL)
+	if (argc == 3)
 	{
-		i = atoi(argv[1]);
-		n = atoi(argv[2]);
-		mult = i * n;
-		printf("%d\n", mult);
+		n1 = atoi(argv[1]);
+		n2 = atoi(argv[2]);
+		printf("%d\n", n1 * n2);
 	}
-
 	else
 	{
 		printf("Error\n");
@@ -29,3 +26,4 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
+
