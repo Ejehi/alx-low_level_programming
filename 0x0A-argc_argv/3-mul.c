@@ -12,18 +12,18 @@ int main(int argc, char *argv[])
 {
 	int mult, i, n;
 
-	if (argv[3] != NULL)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
-	else
+	if (argv[3] == NULL)
 	{
 		i = atoi(argv[1]);
 		n = atoi(argv[2]);
 		mult = i * n;
 		printf("%d\n", mult);
+	}
+
+	else
+	{
+		printf("Error\n");
+		return (1);
 	}
 
 	return (0);
