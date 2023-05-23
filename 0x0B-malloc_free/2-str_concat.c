@@ -19,12 +19,12 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	while (str1[i])
+	while (s1[i])
 	{
 		i++;
 	}
 
-	while (str2[n])
+	while (s2[n])
 	{
 		n++;
 	}
@@ -39,13 +39,13 @@ char *str_concat(char *s1, char *s2)
 
 	while (_index < i)
 	{
-		concat_string[_index] = str1[_index];
+		concat_string[_index] = s1[_index];
 		_index++;
 	}
 
 	while (_index < m)
 	{
-		concat_string[_index] = str2[_index];
+		concat_string[_index] = s2[_index];
 		_index++;
 	}
 
