@@ -2,26 +2,6 @@
 #include "main.h"
 
 /**
- * _strlen - a function to check string length
- *
- * @str: string to check
- *
- * Return: string length
- */
-int _strlen(char *str)
-{
-	int str_length = 0;
-
-	while (str[i])
-	{
-		str_length++;
-	}
-
-	return (str_length);
-
-}
-
-/**
  * str_concat - a function that concatenates two strings
  *
  * @s1: first string
@@ -31,7 +11,7 @@ int _strlen(char *str)
  */
 char *str_concat(char *s1, char *s2)
 {
-	int i = _strlen(s1), n = _strlen(s2), m = 0, l = 0, _index = 0;
+	int i = 0, n = 0, m = 0, l = 0, _index = 0;
 	char *concat_string;
 
 	if (s1 == NULL)
@@ -42,6 +22,16 @@ char *str_concat(char *s1, char *s2)
 	if (s2 == NULL)
 	{
 		s2 = "";
+	}
+
+	while (s1[i])
+	{
+		i++;
+	}
+
+	while (s2[n])
+	{
+		n++;
 	}
 
 	m = i + n;
